@@ -1,0 +1,27 @@
+/* The sketch is always 1920 x 1080. This scales it to fit the window. */
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background: #ffffff;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+canvas {
+  width: 100vw !important;
+  height: 100vh !important;
+  object-fit: contain;
+}
+
+/* The message's typeface: Reddit Sans, a variable font (weights 200 to 900). */
+@font-face {
+  font-family: "Reddit Sans";
+  src: url("fonts/RedditSans-Variable.ttf") format("truetype");
+  font-weight: 200 900;
+}
